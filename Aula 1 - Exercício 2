@@ -1,0 +1,26 @@
+package festa;
+import java.util.Scanner;
+public class acessofesta {
+	public static void main(String[]args) {
+		int anoatual,nasc, calc;
+		String name;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("informe o ano do seu nascimento: ");
+		nasc = entrada.nextInt();
+		System.out.println("Informe o ano atual: ");
+		anoatual = entrada.nextInt();
+		System.out.println("informe o seu nome: ");
+		name = entrada.next();
+		
+		calc = (anoatual-nasc);
+		//Teste para saber a idade no console 
+    //System.out.println(+calc);
+		
+		if(calc>=18) {
+		System.out.println("Sua entrada foi permitida "+name);
+		}
+		else {
+    System.out.println("Acesso negado!!");  
+		}
+	}
+}
